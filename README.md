@@ -1,6 +1,6 @@
 # hars-data-engg
 
-# Postgres vs Pandas vs Spark
+# PostgreSQL vs Pandas vs Spark
 
 The objective of this project was to compare the performances of these tools while doing data transformations
 1. 1 million files were created (1 file for each transaction) and loaded in mongodb 
@@ -22,7 +22,7 @@ The objective of this project was to compare the performances of these tools whi
 # Conclusions
 
 1. When we have large data, it is best to do the transformations at the server end
-2. Reading all data from postgres in Pandas and performing grouping took more time than executing the group by query at the database (server) level
+2. Reading all data from postgresql in Pandas and performing grouping took more time than executing the group by query at the database (server) level
 3. Surprisingly Spark SQL is much faster than SQL and Pandas. It took 250+ seconds in SQL to read 30M records but Spark did it in 88 seconds without partitioning and 67 seconds without partitioning
 4. Spark was run in a standalone mode with 4 processor (threads) machine. If Spark was used in cluster mode, it will be even faster
 5. In Spark SQL, reading from DB and then transforming using Spark SQL was faster (88 seconds) than reading and transforming from DB in single step (198 seconds)
