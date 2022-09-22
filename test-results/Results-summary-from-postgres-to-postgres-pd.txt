@@ -1,0 +1,41 @@
+Pandas is reading postgres and writing the summary to postgres.... 
+XXX: Creating db connection
+XXX: Pandas DF prepared in 541.9811482429504 seconds
+Total records in df are: 28944216
+XXX: Pandas DF transformed in 18.34514808654785 seconds
+Total records in df2 are: 108
+XXX: Inserted summary in postgres 1.3605635166168213 seconds
+Total time taken was :565.5674917697906 seconds
+
+Pandas is transforming in postgres and writing the summary to postgres.... 
+XXX: Creating db connection
+XXX: Reading from postgres
+XXX: Pandas DF prepared in 289.5386507511139 seconds
+Total records in df are: 108
+Total time taken was :289.86809062957764 seconds
+
+Pandas is transforming in postgres and writing the summary to postgres.... 
+XXX: Creating db connection
+XXX: Reading from postgres
+XXX: Pandas DF prepared in 332.5859479904175 seconds
+Total records in df are: 108
+Total time taken was :334.28962683677673 seconds
+
+
+Pandas is reading postgres, transforming in pandas and writing the summary to postgres.... 
+XXX: Creating db connection
+XXX: Reading from postgres
+XXX: Pandas DF prepared in 285.7063639163971 seconds
+Total records in df are: 28944216
+XXX: Pandas DF transformed in 18.045461654663086 seconds
+Total records in df2 are: 108
+Total time taken was :308.8211622238159 seconds
+
+Pandas is reading postgres, transforming in pandas and writing the summary to postgres.... 
+XXX: Creating db connection
+XXX: Reading from postgres
+XXX: Pandas DF prepared in 381.79007363319397 seconds
+Total records in df are: 28944216
+XXX: Pandas DF transformed in 19.34388279914856 seconds
+Total records in df2 are: 108
+Total time taken was :406.0881929397583 seconds

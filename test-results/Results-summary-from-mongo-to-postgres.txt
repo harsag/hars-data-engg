@@ -1,0 +1,81 @@
+-------------------------------------------
+Pandas
+-------------------------------------------
+
+Pandas is reading mongo and writing the summary to postgres.... 
+XXX: Creating db connection
+XXX: Fetched in 0.0019643306732177734 seconds
+XXX: Pandas DF prepared in 15.623486995697021 seconds
+Total records in df1 are: 1448066
+XXX: Pandas DF transformed in 1.922891616821289 seconds
+Total records in df2 are: 108
+XXX: Inserted summary in postgres 0.10088348388671875 seconds
+Total time taken was :18.197986841201782 seconds
+
+Pandas is reading mongo and writing the summary to postgres.... 
+XXX: Creating db connection
+XXX: Fetched in 0.002991914749145508 seconds
+XXX: Pandas DF prepared in 15.384419918060303 seconds
+Total records in df1 are: 1448066
+XXX: Pandas DF transformed in 1.9129483699798584 seconds
+Total records in df2 are: 108
+XXX: Inserted summary in postgres 0.09794306755065918 seconds
+Total time taken was :17.953495979309082 seconds
+
+-------------------------------------------
+Spark
+-------------------------------------------
+
+Spark is reading mongo and writing the summary to postgres.... 
+XXX: Creating session
+XXX: Spark session started in 1.0757405757904053 seconds
+XXX: DF Prepared in Spark in 4.44199800491333 seconds
+Total records in df are: 1448066
+XXX: Temp View Prepared in 0.4968528747558594 seconds
+XXX: Query run in 0.274885892868042 seconds
+Total records in df_final are: 108
+XXX: Inserted summary in postgres 29.878167867660522 seconds
+Total time taken was :36.36091876029968 seconds
+
+
+Spark is reading mongo and writing the summary to postgres.... 
+XXX: Creating session
+XXX: Spark session started in 0.003988981246948242 seconds
+XXX: DF Prepared in Spark in 0.26927995681762695 seconds
+Total records in df are: 1448066
+XXX: Temp View Prepared in 0.03789353370666504 seconds
+XXX: Query run in 0.0498661994934082 seconds
+Total records in df_final are: 108
+XXX: Inserted summary in postgres 21.452237129211426 seconds
+Total time taken was :21.940931797027588 seconds
+
+
+-------------------------------------------
+Pandas and Spark
+-------------------------------------------
+
+Pandas is reading mongo and writing the summary to postgres using Spark.... 
+XXX: Creating session
+XXX: Spark session started in 0.002992391586303711 seconds
+XXX: Fetched in 0.0020012855529785156 seconds
+XXX: Pandas DF prepared in 16.863590002059937 seconds
+Total records in df are: 1448066
+XXX: Spark DF Prepared in 55.68626523017883 seconds
+XXX: Temp View Prepared in 0.011974096298217773 seconds
+XXX: Query run in 0.03690767288208008 seconds
+Total records in df_final are: 108
+XXX: Inserted summary in postgres 14.326610088348389 seconds
+Total time taken was :87.58203911781311 seconds
+
+Pandas is reading mongo and writing the summary to postgres using Spark.... 
+XXX: Creating session
+XXX: Spark session started in 0.004995107650756836 seconds
+XXX: Fetched in 0.002001523971557617 seconds
+XXX: Pandas DF prepared in 17.75393056869507 seconds
+Total records in df are: 1448066
+XXX: Spark DF Prepared in 54.5551438331604 seconds
+XXX: Temp View Prepared in 0.008981704711914062 seconds
+XXX: Query run in 0.032876014709472656 seconds
+Total records in df_final are: 108
+XXX: Inserted summary in postgres 12.91024112701416 seconds
+Total time taken was :85.82914400100708 seconds

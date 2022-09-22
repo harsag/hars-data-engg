@@ -1,0 +1,16 @@
+D:\bigdata\bigdata-perf\ingest>python save_files_to_mongo_pd.py
+Enter start of range
+1
+Enter count
+300000
+Pandas is saving files to mongodb....
+Preparing DF
+DF Prepared in 2017.692765712738seconds
+Concat in 81.52544140815735seconds
+To dict in 3.858654260635376seconds
+Inserted in mongo 7.596094131469727seconds
+Total time taken for 300000 files was :2112.4295830726624 seconds
+Last file name was 300000
+
+D:\bigdata\bigdata-perf\ingest>
+D:\bigdata\bigdata-perf\ingest>
