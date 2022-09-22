@@ -9,7 +9,7 @@ The objective of this project was to compare the performances of these tools whi
 
 # Data architecture
 
-![image](https://user-images.githubusercontent.com/89522672/191739759-0f001f27-82b8-4a5c-9735-d735db47f100.png)
+![image](https://user-images.githubusercontent.com/89522672/191740157-12d19b52-24c6-42d2-8eef-ffaaed7ccd7e.png)
 
 # Transform using SQL
 
