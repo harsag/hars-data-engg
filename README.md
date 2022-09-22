@@ -9,15 +9,15 @@ The objective of this project was to compare the performances of these tools whi
 
 # Data architecture
 
-![image](https://user-images.githubusercontent.com/89522672/191738824-bb9138fc-8cbd-4dde-aa9d-1efea42d855c.png)
+![image](https://user-images.githubusercontent.com/89522672/191739759-0f001f27-82b8-4a5c-9735-d735db47f100.png)
 
 # Transform using SQL
 
-![image](https://user-images.githubusercontent.com/89522672/191738891-799cf7ef-7699-419d-9d14-c83ca6c544c2.png)
+![image](https://user-images.githubusercontent.com/89522672/191739823-809297b8-ea3b-417a-b591-59decca7e893.png)
 
 # Summary of various approaches
 
-![image](https://user-images.githubusercontent.com/89522672/191739087-7a6fba1f-f723-4018-8d7d-64f4e805b946.png)
+![Uploading image.png…]()
 
 # Conclusions
 
@@ -29,4 +29,5 @@ The objective of this project was to compare the performances of these tools whi
 6. When we need to read a large amount of files from file system and create a data frame in Pandas, we should create a list of dfs (one df for each file) and concatenate them into a single df in one go (at the end). This is faster than concatenating all files in a DF one by one.
 7. Transformations are very fast in Pandas and Spark. So in case we need heavy transformations on client side, pandas should be used.
 
-Thanks for reading
+**Thanks for reading
+** Harshad (harshad.saglani@gmail.com)
