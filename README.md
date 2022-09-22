@@ -17,7 +17,7 @@ The objective of this project was to compare the performances of these tools whi
 
 # Summary of various approaches
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/89522672/191740451-cc3b9133-05fd-4a8d-bf67-e2ce4b2c2874.png)
 
 # Conclusions
 
@@ -28,6 +28,8 @@ The objective of this project was to compare the performances of these tools whi
 5. In Spark SQL, reading from DB and then transforming using Spark SQL was faster (88 seconds) than reading and transforming from DB in single step (198 seconds)
 6. When we need to read a large amount of files from file system and create a data frame in Pandas, we should create a list of dfs (one df for each file) and concatenate them into a single df in one go (at the end). This is faster than concatenating all files in a DF one by one.
 7. Transformations are very fast in Pandas and Spark. So in case we need heavy transformations on client side, pandas should be used.
+
+For details on the test results, please see test-results folder.
 
 **Thanks for reading
 ** Harshad (harshad.saglani@gmail.com)
