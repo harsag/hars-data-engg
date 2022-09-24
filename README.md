@@ -19,11 +19,15 @@ The objective of this project was to compare the performances of these tools whi
 
 ![image](https://user-images.githubusercontent.com/89522672/191740451-cc3b9133-05fd-4a8d-bf67-e2ce4b2c2874.png)
 
+![image](https://user-images.githubusercontent.com/89522672/192080440-a16eabee-79da-4d61-af31-cc62d4676d26.png)
+
+The /code folder has the code for all the approaches listed above.
+
 # Conclusions
 
 1. When we have large data, it is best to do the transformations at the server end
 2. Reading all data from postgresql in Pandas and performing grouping took more time than executing the group by query at the database (server) level
-3. Surprisingly Spark SQL is much faster than SQL and Pandas. It took 250+ seconds in SQL to read 30M records but Spark did it in 88 seconds without partitioning and 67 seconds without partitioning
+3. Surprisingly Spark SQL is much faster than SQL and Pandas. It took 250+ seconds in SQL to read 30M records but Spark did it in 88 seconds without partitioning and 67 seconds with partitioning
 4. Spark was run in a standalone mode with 4 processor (threads) machine. If Spark was used in cluster mode, it will be even faster
 5. In Spark SQL, reading from DB and then transforming using Spark SQL was faster (88 seconds) than reading and transforming from DB in single step (198 seconds)
 6. When we need to read a large amount of files from file system and create a data frame in Pandas, we should create a list of dfs (one df for each file) and concatenate them into a single df in one go (at the end). This is faster than concatenating all files in a DF one by one.
