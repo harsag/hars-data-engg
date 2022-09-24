@@ -17,7 +17,7 @@ The objective of this project was to compare the performances of these tools whi
 
 # Summary of various approaches
 
-![image](https://user-images.githubusercontent.com/89522672/192080561-7072ff3a-c936-4714-8c31-34f2e77c1dd8.png)
+![image](https://user-images.githubusercontent.com/89522672/192080621-e8f44c77-a4a2-4794-8676-6ad0ca21c051.png)
 
 The /code folder has the code for all the approaches listed above.
 
